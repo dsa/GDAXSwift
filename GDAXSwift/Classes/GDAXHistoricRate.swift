@@ -15,5 +15,12 @@ public struct GDAXHistoricRate {
 	public let close: Double
 	public let volume: Double
 	
-	public init() {}
+	public init(time: Int, low: Double, high: Double, open: Double, close: Double, volume: Double) {
+	    self.time = time
+	    self.low = low
+	    self.high = high
+	    self.open = open
+	    self.close = close
+	    self.volume = volume
+	}
 }
