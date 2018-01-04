@@ -15,4 +15,5 @@ public struct GDAXHistoricRate {
 	public let close: Double
 	public let volume: Double
 	
+	public init() {}
 }
