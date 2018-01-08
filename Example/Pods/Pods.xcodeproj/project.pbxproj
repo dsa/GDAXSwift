@@ -43,7 +43,7 @@
 		3BC63048C41AAF38C4A3007AFA788C53 /* GDAXAccountHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F500AAD3D16986838F24D7E82436B10F /* GDAXAccountHistory.swift */; };
 		3E0CFA646120B5C7EE291B9A0AF69468 /* GDAXAccountHistoryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA82307735279E927A5AD17A1F5E9B0F /* GDAXAccountHistoryDetails.swift */; };
 		3F11B5695833097D990E95D92CB5B0FD /* Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E22AAE5BE507045C89B0CB6C369C14 /* Bit.swift */; };
-		4154C52720035B0F0029CDF2 /* GDAXUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4154C52620035B0F0029CDF2 /* GDAXUser.swift */; };
+		4154C52920035FD00029CDF2 /* GDAXUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4154C52820035FD00029CDF2 /* GDAXUser.swift */; };
 		42565A483ABC2623800F9E0AABCC59C8 /* GDAXMarketOrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B1DE59266283CAEDC6D45F0DB67952 /* GDAXMarketOrderRequest.swift */; };
 		42D82CF3339AE89CD4FE32B25B56335E /* GDAXPublicClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E57AC57A9E57279FC168DCFB49B8E1 /* GDAXPublicClient.swift */; };
 		49FA126133A34531E04A865AD78EE1B8 /* GDAXAsk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B78231207089180967F238F738199 /* GDAXAsk.swift */; };
@@ -186,7 +186,7 @@
 		3DF13C85AAFE8E96D0A489F869182A77 /* Poly1305.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Poly1305.swift; path = Sources/CryptoSwift/Poly1305.swift; sourceTree = "<group>"; };
 		3E8B78231207089180967F238F738199 /* GDAXAsk.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GDAXAsk.swift; path = GDAXSwift/Classes/GDAXAsk.swift; sourceTree = "<group>"; };
 		4013CCCF23C887740EFAA36306808CA9 /* PKCS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS5.swift; path = Sources/CryptoSwift/PKCS5/PKCS5.swift; sourceTree = "<group>"; };
-		4154C52620035B0F0029CDF2 /* GDAXUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDAXUser.swift; sourceTree = "<group>"; };
+		4154C52820035FD00029CDF2 /* GDAXUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GDAXUser.swift; path = GDAXSwift/Classes/GDAXUser.swift; sourceTree = "<group>"; };
 		43F73F0C86D2D53BF1AE7E0DFD75E628 /* Utils+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Utils+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Utils+Foundation.swift"; sourceTree = "<group>"; };
 		45CE1CE513939BD2FE7D1C55F4693BBE /* Array+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Extension.swift"; path = "Sources/CryptoSwift/Array+Extension.swift"; sourceTree = "<group>"; };
 		47DCC810AD2B5E4303EE4B51A91BACBE /* Pods-GDAXSwift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GDAXSwift_Example-dummy.m"; sourceTree = "<group>"; };
@@ -368,6 +368,7 @@
 		15AB7521B7BB44A064ABF82C307AC4A2 /* GDAXSwift */ = {
 			isa = PBXGroup;
 			children = (
+				4154C52820035FD00029CDF2 /* GDAXUser.swift */,
 				7AE0BBF74BD7A6404FA625131D68C5DA /* DataExtensions.swift */,
 				2F36E3A8E2CAFBD924CB5E745C9685A7 /* DateExtensions.swift */,
 				F00A1F13E87FC955C43A76EA635F8175 /* DictionaryExtensions.swift */,
@@ -417,7 +418,6 @@
 				5AE28644A743DCA00A353542BD35422A /* ResponseMiddleware.swift */,
 				59334D8959499BB55769085DA963557E /* StringExtensions.swift */,
 				AB3425FE22E42FE328A58CF2A4A23B84 /* Support Files */,
-				4154C52620035B0F0029CDF2 /* GDAXUser.swift */,
 			);
 			name = GDAXSwift;
 			path = ../..;
@@ -747,7 +747,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4154C52720035B0F0029CDF2 /* GDAXUser.swift in Sources */,
+				4154C52920035FD00029CDF2 /* GDAXUser.swift in Sources */,
 				1EE97DBCB9F7E4B0E2DF00BAB4265BC6 /* DataExtensions.swift in Sources */,
 				32F1C55B15D88076CDF19D2EE2108B7E /* DateExtensions.swift in Sources */,
 				8DE88504C411898523F6486FDD9BE40A /* DictionaryExtensions.swift in Sources */,
