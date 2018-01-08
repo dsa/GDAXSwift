@@ -12,6 +12,7 @@ public class GDAXPrivateClient {
 	
 	private let httpClient: HTTPClient
 	
+    private static let usersRootURLString = "/users"
 	private static let accountsRootURLString = "/accounts"
 	private static let ordersRootURLString = "/orders"
 	private static let fillsRootURLString = "/fills"
@@ -23,6 +24,10 @@ public class GDAXPrivateClient {
 			.requestMiddleware(middleware: GDAXRequestMiddleware(gdaxClient: gdaxClient, authenticateRequests: true))
 			.responseMiddleware(middleware: GDAXResponseMiddleware())
 	}
+    
+    public func getUser(_ completionHandler: @escaping ([GDAXUser]?, HTTPURLResponse?, Error?) -> Void) {
+        httpClient.requestJSON(urlString: "\(GDAXPrivateClient.usersRootURLString)/self", method: .get, completionHandler: completionHandler)
+    }
 	
 	public func getAccounts(_ completionHandler: @escaping ([GDAXAccount]?, HTTPURLResponse?, Error?) -> Void) {
 		httpClient.requestJSON(urlString: GDAXPrivateClient.accountsRootURLString, method: .get, completionHandler: completionHandler)
