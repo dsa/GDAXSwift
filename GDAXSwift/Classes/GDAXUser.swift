@@ -13,7 +13,7 @@ public struct GDAXUser: JSONInitializable {
 //    public let termsAcceptAt: Date
     public let name: String
     public let email: String
-    public let countryCode: String
+//    public let countryCode: String
     public let stateCode: String
     public let legalName: String
     
@@ -50,12 +50,20 @@ public struct GDAXUser: JSONInitializable {
             throw GDAXError.responseParsingFailure("state_code")
         }
         
-        let country = json["country"] as? [String: String]
-        if country != nil {
-            guard let countryCode = country!["code"] else {
-                throw GDAXError.responseParsingFailure("country code")
-            }
-        }
+//        let country = json["country"] as? [String: String]
+//        var countryCode: String?
+//        if country != nil {
+//            guard let countryCode = country!["code"] else {
+//                throw GDAXError.responseParsingFailure("country code")
+//            }
+//        }
+        
+        self.id = id
+        self.name = name
+        self.email = email
+        self.legalName = legalName
+        self.stateCode = stateCode
+//        self.countryCode =
         
 //        guard let createdAt = json["created_at"] as? String else {
 //            throw GDAXError.responseParsingFailure("created_at")
