@@ -25,7 +25,7 @@ public class GDAXPrivateClient {
 			.responseMiddleware(middleware: GDAXResponseMiddleware())
 	}
     
-    public func getUser(_ completionHandler: @escaping ([GDAXUser]?, HTTPURLResponse?, Error?) -> Void) {
+    public func getUser(_ completionHandler: @escaping (GDAXUser?, HTTPURLResponse?, Error?) -> Void) {
         httpClient.requestJSON(urlString: "\(GDAXPrivateClient.usersRootURLString)/self", method: .get, completionHandler: completionHandler)
     }
 	
