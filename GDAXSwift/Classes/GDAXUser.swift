@@ -52,7 +52,7 @@ public struct GDAXUser: JSONInitializable {
         
         let country = json["country"] as? [String: String]
         if country != nil {
-            guard let countryCode = country["code"] else {
+            guard let countryCode = country!["code"] else {
                 throw GDAXError.responseParsingFailure("country code")
             }
         }
