@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public enum GDAXDoneReason: String {
+public enum GDAXDoneReason: String, Codable {
 
 	case canceled, filled
 
