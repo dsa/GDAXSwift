@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public enum GDAXAccountHoldType: String {
+public enum GDAXAccountHoldType: String, Codable {
 	
 	case order, transfer
 	

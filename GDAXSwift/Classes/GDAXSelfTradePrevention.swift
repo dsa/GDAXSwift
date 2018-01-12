@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public enum GDAXSelfTradePrevention: String {
+public enum GDAXSelfTradePrevention: String, Codable {
 	
 	case dc, co, cn, cb
 	

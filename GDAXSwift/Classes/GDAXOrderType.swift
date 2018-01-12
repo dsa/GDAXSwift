@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public enum GDAXOrderType: String {
+public enum GDAXOrderType: String, Codable {
 	
 	case limit, market, stop
 	

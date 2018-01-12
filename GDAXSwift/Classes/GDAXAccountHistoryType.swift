@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public enum GDAXAccountHistoryType: String {
+public enum GDAXAccountHistoryType: String, Codable {
 	
 	case transfer, match, fee, rebate
 	

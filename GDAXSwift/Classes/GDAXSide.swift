@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public enum GDAXSide: String {
+public enum GDAXSide: String, Codable {
 	
 	case buy, sell
 	

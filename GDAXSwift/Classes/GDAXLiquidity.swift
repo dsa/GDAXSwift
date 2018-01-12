@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public enum GDAXLiquidity: String {
+public enum GDAXLiquidity: String, Codable {
 	
 	case maker = "M"
 	case taker = "T"

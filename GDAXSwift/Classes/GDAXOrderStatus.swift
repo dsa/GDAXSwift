@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public enum GDAXOrderStatus: String {
+public enum GDAXOrderStatus: String, Codable {
 	
 	case open, pending, active, done, all, rejected
 	

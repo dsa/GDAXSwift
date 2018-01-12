@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public enum GDAXTimeInForce: String {
+public enum GDAXTimeInForce: String, Codable {
 	
 	case gtc = "GTC"
 	case gtt = "GTT"

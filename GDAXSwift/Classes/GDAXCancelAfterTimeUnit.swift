@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public enum GDAXCancelAfterTimeUnit: String {
+public enum GDAXCancelAfterTimeUnit: String, Codable {
 	
 	case min, hour, day
 	
