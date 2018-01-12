@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public struct GDAXCurrency: JSONInitializable {
+public struct GDAXCurrency: JSONInitializable, Codable {
 	
 	public let id: String
 	public let name: String

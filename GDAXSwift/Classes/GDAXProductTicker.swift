@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public struct GDAXProductTicker: JSONInitializable {
+public struct GDAXProductTicker: JSONInitializable, Codable {
 	
 	public let tradeID: Int
 	public let price: Double

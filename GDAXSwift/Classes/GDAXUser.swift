@@ -5,7 +5,7 @@
 //  Created by Russ D'Sa on 1/7/18.
 //
 
-public struct GDAXUser: JSONInitializable {
+public struct GDAXUser: JSONInitializable, Codable {
     
     public let id: String
 //    public let createdAt: Date

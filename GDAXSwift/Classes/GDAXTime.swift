@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public struct GDAXTime: JSONInitializable {
+public struct GDAXTime: JSONInitializable, Codable {
 	
 	public let iso: Date
 	public let epoch: Double

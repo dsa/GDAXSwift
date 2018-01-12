@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public struct GDAXAccountHistoryDetails: JSONInitializable {
+public struct GDAXAccountHistoryDetails: JSONInitializable, Codable {
 	
 	public let orderID: String
 	public let tradeID: Int

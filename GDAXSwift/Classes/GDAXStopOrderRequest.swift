@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public struct GDAXStopOrderRequest: GDAXOrderRequestProtocol {
+public struct GDAXStopOrderRequest: GDAXOrderRequestProtocol, Codable {
 	
 	public let type: GDAXOrderType = .stop
 	

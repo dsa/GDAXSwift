@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public struct GDAXLimitOrderRequest: GDAXOrderRequestProtocol {
+public struct GDAXLimitOrderRequest: GDAXOrderRequestProtocol, Codable {
 	
 	public let type: GDAXOrderType = .limit
 	

@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public struct GDAXHistoricRate {
+public struct GDAXHistoricRate: Codable {
 	
 	public var time: Int = 0
 	public var low: Double = 0.0

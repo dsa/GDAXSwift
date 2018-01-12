@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public struct GDAXBid {
+public struct GDAXBid: Codable {
 	
 	public let price: Double
 	public let size: Double

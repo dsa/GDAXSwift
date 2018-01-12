@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public struct GDAXAccountHistory: JSONInitializable {
+public struct GDAXAccountHistory: JSONInitializable, Codable {
 	
 	public let id: String
 	public let createdAt: Date

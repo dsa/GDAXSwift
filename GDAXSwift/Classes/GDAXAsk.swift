@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public struct GDAXAsk {
+public struct GDAXAsk: Codable {
 	
 	public let price: Double
 	public let size: Double

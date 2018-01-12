@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public struct GDAXMarketOrderRequest: GDAXOrderRequestProtocol {
+public struct GDAXMarketOrderRequest: GDAXOrderRequestProtocol, Codable {
 	
 	public let type: GDAXOrderType = .market
 	

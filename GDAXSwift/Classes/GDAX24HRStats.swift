@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public struct GDAX24HRStats: JSONInitializable {
+public struct GDAX24HRStats: JSONInitializable, Codable {
 	
 	public let open: Double
 	public let high: Double

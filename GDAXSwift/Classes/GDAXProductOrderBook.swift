@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public struct GDAXProductOrderBook: JSONInitializable {
+public struct GDAXProductOrderBook: JSONInitializable, Codable {
 	
 	public let sequence: Int
 	public let bids: [GDAXBid]

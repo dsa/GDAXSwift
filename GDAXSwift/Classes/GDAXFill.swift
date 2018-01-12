@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public struct GDAXFill: JSONInitializable {
+public struct GDAXFill: JSONInitializable, Codable {
 	
 	public let tradeID: Int
 	public let productID: String

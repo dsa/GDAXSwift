@@ -6,7 +6,7 @@
 //  Copyright © 2017 Anthony Puppo. All rights reserved.
 //
 
-public struct GDAXOrder: JSONInitializable {
+public struct GDAXOrder: JSONInitializable, Codable {
 	
 	public let id: String
 	public let price: Double
