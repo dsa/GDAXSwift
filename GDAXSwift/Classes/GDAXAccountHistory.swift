@@ -28,7 +28,7 @@ public struct GDAXAccountHistory: JSONInitializable, Codable {
 			throw GDAXError.invalidResponseData
 		}
 		
-		guard let id = json["id"] as? String else {
+		guard let id = json["id"] as? Int else {
 			throw GDAXError.responseParsingFailure("id")
 		}
 		
