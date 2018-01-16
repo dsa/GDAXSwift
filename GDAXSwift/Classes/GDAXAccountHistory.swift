@@ -8,7 +8,7 @@
 
 public struct GDAXAccountHistory: JSONInitializable, Codable {
 	
-	public let id: String
+	public let id: Int
 	public let createdAt: Date
 	public let amount: Double
 	public let balance: Double
